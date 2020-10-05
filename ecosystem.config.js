@@ -22,7 +22,7 @@ module.exports = {
       ssh_options: ["ForwardAgent=yes", "StrictHostKeyChecking=no"],
       "pre-setup": "npm install -g pm2@latest",
       "pre-deploy-local": "echo 'This is a local executed command'",
-      "post-deploy": "npm install && pm2 deploy ecosystem.config.js production",
+      "post-deploy": "npm install && ./startup-pm2.sh",
     },
   },
 };
