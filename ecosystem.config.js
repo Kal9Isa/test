@@ -21,7 +21,7 @@ module.exports = {
       path: "/home/debian/projects/fota/",
       ssh_options: ["ForwardAgent=yes", "StrictHostKeyChecking=no"],
       "pre-setup": "npm install -g pm2@latest",
-      "pre-deploy-local": "echo 'This is a local executed command'",
+      "pre-deploy-local": "echo 'This is a local executed command' && whoami",
       "post-deploy": "npm install && ./startup-pm2.sh",
     },
   },
