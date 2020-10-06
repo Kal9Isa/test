@@ -20,9 +20,9 @@ module.exports = {
       repo: "https://github.com/Kal9Isa/test.git",
       path: "/home/debian/projects/fota/",
       ssh_options: ["ForwardAgent=yes", "StrictHostKeyChecking=no"],
-      "pre-setup": "npm install -g pm2@latest",
+      // "pre-setup": "npm install -g pm2@latest",
       "pre-deploy-local": "echo 'This is a local executed command' && whoami",
-      "post-deploy": "npm install && ./startup-pm2.sh",
+      // "post-deploy": "npm install && ./startup-pm2.sh",
     },
   },
 };
